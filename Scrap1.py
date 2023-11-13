@@ -57,6 +57,8 @@ for i in range(ilgis):
     }
     df = pd.DataFrame(data)
     print(df)
+
+pakeitimas
 # # df[""] = df[""].str.split(pat='M', n=0, expand=True)[0]
 # # df[""] = df[""].str.split(pat='M', n=0, expand=True)[1]
 # # df.drop(columns=[''], inplace=True)
