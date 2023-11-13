@@ -14,7 +14,7 @@ page = requests.get(url, headers=headers)
 ilgis = len(page.json()["data"]["itemMatrix"])
 sarasas1 = []
 sarasas2 = []
-sarasas3 = []
+# sarasas3 = []
 sarasas4 = []
 sarasas5 = []
 sarasas6 = []
@@ -28,7 +28,7 @@ for i in range(ilgis):
         data3 = page.json()["data"]["itemMatrix"][i][2]["value"]
         data4 = page.json()["data"]["itemMatrix"][i][3]["value"]
         data5 = page.json()["data"]["itemMatrix"][i][4]["value"]
-        vyrai_moterys = page.json()["data"]["sidebar"][0]["captions"][i]["name"]
+        # vyrai_moterys = page.json()["data"]["sidebar"][0]["captions"][i]["name"]
         # vyrai = page.json()["data"]["sidebar"][1]["captions"][i]["name"]
         # moterys = page.json()["data"]["sidebar"][2]["captions"][i]["name"]
         fdata1 = data1.replace(u'\xa0', '')
@@ -47,13 +47,13 @@ for i in range(ilgis):
     sarasas6.append(fdata5)
 
 
-    sarasas3.append(vyrai_moterys)
+    # sarasas3.append(vyrai_moterys)
     # sarasas7.append(vyrai)
     # sarasas8.append(moterys)
     # print(vyrai_moterys, data1, data2, data3, data4, data5)
 #
     data = {
-    "Pavadinimai": sarasas3,
+    # "Pavadinimai": sarasas3,
     "2018": sarasas1,
     "2019": sarasas2,
     "2020": sarasas4,
@@ -63,10 +63,11 @@ for i in range(ilgis):
     df = pd.DataFrame(data)
     print(df)
 
-pakeitimas
+    df.to_csv("LIGOS.csv", index=True)
+# pakeitimas
 # # df[""] = df[""].str.split(pat='M', n=0, expand=True)[0]
 # # df[""] = df[""].str.split(pat='M', n=0, expand=True)[1]
 # # df.drop(columns=[''], inplace=True)
 # # df = df.reindex(columns=['', 'Month', '', ''])
 # # print(df)
-# # df.to_csv("LIGOS.csv", index=True)
+#df.to_csv("LIGOS.csv", index=True)
