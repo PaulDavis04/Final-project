@@ -32,6 +32,7 @@ for i in range(ilgis):
         # vyrai_moterys = page.json()["data"]["sidebar"][0]["captions"][i]["name"]
         # vyrai = page.json()["data"]["sidebar"][1]["captions"][i]["name"]
         # moterys = page.json()["data"]["sidebar"][2]["captions"][i]["name"]
+
         fdata1 = data1.replace(u'\xa0', '')
         fdata2 = data2.replace(u'\xa0', '')
         fdata3 = data3.replace(u'\xa0', '')
