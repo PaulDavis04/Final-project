@@ -3,7 +3,7 @@ import requests
 
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0"}
 
-url = "https://osp.stat.gov.lt/analysis-portlet/services/api/v1/data/generate/table/hash/4b9681f1-aa53-47ad-832b-ef4b56eb3a22"
+url = "https://osp.stat.gov.lt/lt/statistiniu-rodikliu-analize?hash=4b9681f1-aa53-47ad-832b-ef4b56eb3a22#/"
 
 response = requests.get(url, headers=headers)
 
