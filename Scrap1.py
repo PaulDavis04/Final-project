@@ -9,9 +9,10 @@ headers = {
     'accept': 'application/json, text/plain, */*',
     'cookie': '_ga=GA1.2.1272715160.1699462284; _gid=GA1.2.1647336826.1699462284; _ga_E8WJ6X0RYN=GS1.2.1699471615.3.0.1699471615.60.0.0; _ga_162SQ74LLR=GS1.2.1699471697.2.1.1699471698.0.0.0'
 }
-url = "https://osp.stat.gov.lt/analysis-portlet/services/api/v1/data/generate/table/hash/4b9681f1-aa53-47ad-832b-ef4b56eb3a22"
+url = "https://osp.stat.gov.lt/lt/statistiniu-rodikliu-analize?hash=4b9681f1-aa53-47ad-832b-ef4b56eb3a22#/"
 page = requests.get(url, headers=headers)
 ilgis = len(page.json()["data"]["itemMatrix"])
+
 sarasas1 = []
 sarasas2 = []
 # sarasas3 = []
@@ -63,7 +64,7 @@ for i in range(ilgis):
     df = pd.DataFrame(data)
     print(df)
 
-    df.to_csv("LIGOS.csv", index=True)
+    df.to_csv("Operacijos.csv", index=True)
 # pakeitimas
 # # df[""] = df[""].str.split(pat='M', n=0, expand=True)[0]
 # # df[""] = df[""].str.split(pat='M', n=0, expand=True)[1]
