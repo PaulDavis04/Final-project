@@ -1,10 +1,12 @@
 import pandas as pd
 
-df3 = pd.read_csv(".csv")
+df1 = pd.read_csv("pavadinimai_naujas.csv")
+df2 = pd.read_csv("naujas.csv")
+df3 = pd.concat([df1, df2], axis=1)
 
-df2 = pd.concat([df, df1], axis=1)
-print("After merging the DataFrames:"df2)
 
+print(df3)
+df3.to_csv("LENTELĖ")
 
 # df3 = df3.drop(columns=[0])
 
