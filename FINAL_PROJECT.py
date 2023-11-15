@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def rodyti_meniu():
-    print("\n----Meniu------")
+    print("\n---------------------------Meniu------------------------------------------")
     print("1.Peržiūrėti 5 dažniausius 5 metų suaugusiųjų susirgimų vidurkius")
     print("2.Peržiūrėti 5 rečiausius 5 metų suaugusiųjų susirgimų vidurkius")
     print("3.Spausdinti grafiką: Vidutinis sergančiųjų tam tikra liga 5 metų laikotarpyje skaičius")
@@ -13,19 +13,19 @@ def rodyti_meniu():
     print("7.Išeiti")
 
 def Peržiūrėti_5_dažniausius():
-    df_vm = pd.read_csv(r"VMlent_mean.csv")
+    df_vm = pd.read_csv(r"CSV/VMlent_mean.csv")
     trys_didziausi_sk = df_vm.sort_values(by="mean", ascending=False).head(5)
     print(trys_didziausi_sk)
     return
 
 def Peržiūrėti_5_rečiausius():
-    df_vm = pd.read_csv(r"VMlent_mean.csv")
+    df_vm = pd.read_csv(r"CSV/VMlent_mean.csv")
     trys_maziausi_sk = df_vm.sort_values(by="mean").head(5)
     print(trys_maziausi_sk)
     return
 
 def Vidutinis_serganciųjų():
-    VM_susirgimai = pd.read_csv(r"VMlent_mean.csv")
+    VM_susirgimai = pd.read_csv(r"CSV/VMlent_mean.csv")
     ligos = VM_susirgimai["Ligos"]
     reiksmes = VM_susirgimai["mean"]
 
@@ -39,7 +39,7 @@ def Vidutinis_serganciųjų():
     return
 
 def TOP3_vyrų_dažniausių():
-    df_v = pd.read_csv("Vlent_mean.csv")
+    df_v = pd.read_csv("CSV/Vlent_mean.csv")
     trys_didziausi_sk = df_v.sort_values(by="mean",ascending=False).head(3)
     trys_maziausi_sk = df_v.sort_values(by="mean").head(3)
 
@@ -54,7 +54,7 @@ def TOP3_vyrų_dažniausių():
 
     return
 def TOP3_moterų_dažniausių():
-    df_m = pd.read_csv("Mlent_mean.csv")
+    df_m = pd.read_csv("CSV/Mlent_mean.csv")
     trys_didziausi_sk = df_m.sort_values(by="mean", ascending=False).head(3)
     trys_maziausi_sk = df_m.sort_values(by="mean").head(3)
 
@@ -69,8 +69,8 @@ def TOP3_moterų_dažniausių():
 
     return
 def Vidutinis_vyrų_ir_moterų():
-    V_susirgimai = pd.read_csv(r"Vlent_mean.csv")
-    M_susirgimai = pd.read_csv(r"Mlent_mean.csv")
+    V_susirgimai = pd.read_csv(r"CSV/Vlent_mean.csv")
+    M_susirgimai = pd.read_csv(r"CSV/Mlent_mean.csv")
 
     Vligos = V_susirgimai["Ligos"]
     Vreiksmes = V_susirgimai["mean"]

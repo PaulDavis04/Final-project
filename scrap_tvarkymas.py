@@ -2,7 +2,7 @@ import psycopg2
 from psycopg2 import sql
 import pandas as pd
 
-df = pd.read_csv(r"scraped_data.csv.")
+df = pd.read_csv(r"CSV/scraped_data.csv.")
 df.drop(df.iloc[:, 5:566], inplace=True, axis=1)
 df.drop([0,1,2,3,4,5,6], axis=0, inplace=True)
 
@@ -16,7 +16,7 @@ df['2022'] = df['2022'].str.replace(' ', '')
 
 df.set_index('2018', inplace = True)
 
-df.to_csv("naujas.csv", index=True)
+df.to_csv("CSV/naujas.csv", index=True)
 
 
 

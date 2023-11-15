@@ -29,7 +29,7 @@ if data:
 
     df = pd.DataFrame(data)
 
-    csv_file_path = 'scraped_data.csv'
+    csv_file_path = 'CSV/scraped_data.csv'
 
     df.to_csv(csv_file_path, index=False)
 

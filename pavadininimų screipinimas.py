@@ -34,7 +34,7 @@ if data:
 
     df = pd.DataFrame(data)
 
-    csv_file_path = 'skreipinti_pavadinimai.csv'
+    csv_file_path = 'CSV/skreipinti_pavadinimai.csv'
 
     df.to_csv(csv_file_path)
 
