@@ -33,7 +33,7 @@ def Vidutinis_serganciųjų():
     plt.bar(ligos, reiksmes, color='maroon')
     plt.xlabel("Ligos")
     plt.ylabel("Ligų vidurkiai")
-    plt.title("Susirgimų vidurkiai")
+    plt.title("Vidutinis sergančiųjų tam tikra liga 5 metų laikotarpyje skaičius")
     plt.xticks(rotation=20, ha="right")
     plt.show()
     return
@@ -48,7 +48,7 @@ def TOP3_vyrų_dažniausių():
     plt.bar(trys_maziausi_sk["Ligos"], trys_maziausi_sk["mean"])
     plt.xlabel('Ligos')
     plt.ylabel('Susirgimų skaičius')
-    plt.title('Trys didžiausi ir mažiausi vyrų susirgimų skaičiai')
+    plt.title('TOP3 vyrų dažniausių ir rečiausių susirgimų 5 metų vidurkiai')
     plt.xticks(rotation=5, ha='right')
     plt.show()
 
@@ -63,7 +63,7 @@ def TOP3_moterų_dažniausių():
     plt.bar(trys_maziausi_sk["Ligos"], trys_maziausi_sk["mean"])
     plt.xlabel('Ligos')
     plt.ylabel('Susirgimų skaičius')
-    plt.title('Top trys didžiausių ir mažiausių moterų susirgimų per 5 metus skaičių vidurkis ')
+    plt.title('TOP3 moterų dažniausių ir rečiausių susirgimų 5 metų vidurkiai')
     plt.xticks(rotation=5, ha='right')
     plt.show()
 
@@ -82,8 +82,9 @@ def Vidutinis_vyrų_ir_moterų():
     plt.plot(Mligos, Mreiksmes, color='red')
     plt.xlabel("Ligos")
     plt.ylabel("Ligų vidurkiai")
-    plt.title("Susirgimų vidurkiai")
+    plt.title("Vidutinis vyrų ir moterų, sergančiųjų tam tikra liga 5 metų laikotarpyje, skaičiaus palyginimas")
     plt.xticks(rotation=20, ha='right')
+    plt.legend()
     plt.show()
 
     return
