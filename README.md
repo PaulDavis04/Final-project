@@ -68,6 +68,8 @@ Naudojamos bibliotekos: Matplotlib, Pandas.
 
 
 
+![myplot3](https://github.com/PaulDavis04/Final-project/assets/149395819/3046b157-cc5d-40e1-8048-40651f0b4168)
+
 
 
 
@@ -76,11 +78,14 @@ Naudojamos bibliotekos: Matplotlib, Pandas.
 
 
 1. Pasirinkus 4 matome grafiką, kuris parodo tris dažniausiai ir tris rečiausiai pasitaikančias ligas tarp vyrų.
+![myplot4](https://github.com/PaulDavis04/Final-project/assets/149395819/4976f3f6-b14e-44d8-93f7-04ffd5bed165)
 
 1. Pasirinkus 5 matome grafiką, kuris parodo tris dažniausiai ir tris rečiausiai pasitaikančias ligas tarp moterų.
 
+![myplot5](https://github.com/PaulDavis04/Final-project/assets/149395819/43a33391-995a-48e6-ba61-60c2e2b70dd9)
 
 1. Pasirinkus 6 matome grafiką, kuris parodo susirgimų vidurkius per 2018-2022 metus: viena kreivė rodo vyrų susirgimus, kita kreivė – moterų.
+![myplot6](https://github.com/PaulDavis04/Final-project/assets/149395819/5c121eff-4f1f-4384-9214-753a75a19d9f)
 
 
 1. Pasirinkus 7, galite išeiti iš meniu.
