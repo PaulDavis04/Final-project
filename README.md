@@ -10,7 +10,7 @@ Pagrindinis projekto tikslas – išsiaiškinti tam tikrų ligų tendenciją Lie
 
 **scrap.py**
 
-Naudojamos bibliotekos: Selenium, Pandas.
+Naudojamos bibliotekos: Selenium, Webdriver_manager.chrome, Pandas.
 
 Žingsniai:
 
@@ -85,7 +85,8 @@ Naudojamos bibliotekos: Matplotlib, Pandas.
 ![myplot5](https://github.com/PaulDavis04/Final-project/assets/149395819/43a33391-995a-48e6-ba61-60c2e2b70dd9)
 
 1. Pasirinkus 6 matome grafiką, kuris parodo susirgimų vidurkius per 2018-2022 metus: viena kreivė rodo vyrų susirgimus, kita kreivė – moterų.
-![myplot6](https://github.com/PaulDavis04/Final-project/assets/149395819/5c121eff-4f1f-4384-9214-753a75a19d9f)
+
+![myplot6](https://github.com/PaulDavis04/Final-project/assets/149395819/ae5257b0-5c04-4085-bbe2-8ee5fb779eaf)
 
 
 1. Pasirinkus 7, galite išeiti iš meniu.
