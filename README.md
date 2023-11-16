@@ -10,7 +10,7 @@ Pagrindinis projekto tikslas – išsiaiškinti tam tikrų ligų tendenciją Lie
 
 **scrap.py**
 
-Naudojamos bibliotekos: Selenium, Pandas.
+Naudojamos bibliotekos: Selenium, Webdriver_manager.chrome, Pandas.
 
 Žingsniai:
 
