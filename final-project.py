@@ -98,12 +98,13 @@ def vidutinis_vyru_ir_moteru():
     mreiksmes = m_susirgimai["mean"]
 
     plt.fig = plt.figure(figsize=(20, 15))
-    plt.plot(vligos, vreiksmes, color='blue')
-    plt.plot(mligos, mreiksmes, color='red')
+    plt.plot(vligos, vreiksmes, color='blue', label="Vyrai")
+    plt.plot(mligos, mreiksmes, color='red', label="Moterys")
     plt.xlabel("Ligos")
     plt.ylabel("Ligų vidurkiai")
     plt.title("Vidutinis vyrų ir moterų, sergančiųjų tam tikra liga 5 metų laikotarpyje, skaičiaus palyginimas")
     plt.xticks(rotation=20, ha='right')
+    plt.legend()
     plt.show()
     return
 
