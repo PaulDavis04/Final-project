@@ -15,7 +15,7 @@ df['2020'] = df['2020'].str.replace(' ', '')
 df['2021'] = df['2021'].str.replace(' ', '')
 df['2022'] = df['2022'].str.replace(' ', '')
 
-###pakeičiame stulpelių pavadinimus###
+###pašaliname pirmą stulpelį su indeksais, kad liktų tik reikšmių stulpeliai###
 df.set_index('2018', inplace = True)
 
 ###išsaugome sutvarkytą duomenų lentelę###
